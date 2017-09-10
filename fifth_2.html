@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script src="jquery-3.2.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#H').click(function(){
+				
+					$('#I').text("My name is"+$('#E').val()+"\n My phonenumber is"+$('#F').val()+"My Email address is"+$('#G').val());
+				});
+				
+				/*$('#H').click(function(){
+					$('#I').text($('#E').val()+" "+$('#F').val()+" "+	$('#G').val());
+				});*/
+				
+				/*$('#H').click(function(){
+					alert($('#E').val() +$('#F').val()+ $('#G').val());
+				
+				});*/
+				
+				
+				/*$('#D').click(function(){
+				$('#C').val('RRRRRR');
+				});*/
+				
+				
+				/*$('.A').click(function(){
+					$(this).attr('src','aa.jpg');
+				});*/
+				
+				
+				/*$('.A').click(function(){
+					alert($(this).attr('src'));
+				
+				});*/
+				
+			});
+		</script>
+	</head>
+	<body>
+		<img src="handball.jpg" style="width:300px;height:300px;" class="A" id="A"/><br/>
+		<img src="Volleyball.jpg"style="width:300px;height:300px;" class="A" id="B"/>
+		<p>Hello</p>
+		<input type="textbox"  id="C"/>
+		<input type="button" value="OK" id="D"/>
+		
+		Name<input type="text"/ id="E">
+		Phonenumber<input type="number" id="F"/>
+		Email<input type="email" id="G"/>
+		<p id="I">Hi</p>
+		<input type="button" value="OK" id="H"/>
+	</body>
+</html>

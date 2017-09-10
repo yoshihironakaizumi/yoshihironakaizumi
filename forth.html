@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<script src="jquery-3.2.1.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('#A').click(function(){
+					$('#C').hide(5000);
+				
+				});
+				$('#B').click(function(){
+					$('#C').show(5000);
+				});
+				$('#D').click(function(){
+					$('#C').toggle(5000);
+				});
+				$('#E').click(function(){
+					$('#a').text("Yoshi from Japan");
+					$('#b').text("MISAO");
+					$('#c').text("Yoshikazu");
+					$('#d').text("hiragana");
+				});
+				$('#F').click(function(){
+					$('#G').html('<input type="button" value="my new button"/>');
+				});
+				$('#H').click(function(){
+					$('#c').css({'color':'blue','font-size':'50px'});
+				});
+			
+			
+			
+			//44444444444
+			
+				/*$('#A').click(function(){
+					alert("yoshihiro")
+				});
+				
+				$('#B').click(function(){
+					alert("Raj")
+				});*/
+			//	33333333
+			//	alert("yoshihiro \n Raj \nyoshi \ntaro \nyuki \nshinji \nmusashi \ntakeshi \nazuma")
+			
+			
+			
+			//	2222222222
+			//alert("yoshihiro Raj yoshi taro yuki shinji musashi takeshi azuma");
+				
+				
+				
+				
+				/*1111111111111
+				alert("yoshihiro");
+				alert("Raj");
+				alert("yoshi");
+				alert("azuma");
+				alert("shinji");
+				alert("hiroshi");
+				alert("takeshi");
+				alert("taro");
+				alert("jiro");
+				alert("saburo");*/
+				
+			
+			});
+				
+		</script>
+	</head>
+	<body>
+		<div style="background-color:blue;width:300px;height:300px;float:left"></div>		
+		<div style="background-color:green;width:300px;height:300px;float:left" id="C"></div>		
+		<div style="background-color:pink;width:300px;height:300px;float:left"></div>	
+		<input type="button" value="close" id="A"/>
+		<input type="button" value="show" id="B"/>
+		<input type="button" value="toggle" id="D"/>
+		<h1 id="a">Hello MISAO</h1>
+		<h1 id="b">Hello Yoshihiro</h1>
+		<p id="c">Hello MISAO</p>
+		<p id="d">Hello Yoshihiro</p>
+		<input type="button" value="OK TEXT" id="E"/>
+		<input type="button" value="OK CSS" id="H"/>
+		<div style="background-color:green;height:300px;width:300px;" id="G"></div>
+		<input type="button" value="OK HTML" id="F"/>
+	</body>
+</html>

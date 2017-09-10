@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script src="jquery-3.2.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#h').click(function(){
+					$('#i').text("Hi! My name is "+$('#a').val()+". Today, I'm going to the movie theater in "+$('#d').val()+" to watch "
+								+$('#f').val()+". Do you know this movie? It's so famous because the theme\n song is "+$('#e').val()+
+								".Moreover, it's "+$('#g').val()
+								+", \nthat is, my birthday!!! Cool:-)\n IF you want to contact me, My Phonenumber is "
+								+$('#b').val()+".\n My Email address is "+$('#c').val()+"Waiting for your contact.");
+				
+				});
+			});
+		</script>
+	</head>
+	<body style="background-color:skyblue;">
+		<div style="width:30%;height:100%;float:left">
+			<table style="margin-left:50px;margin-top:100px;">
+				<tr>
+					<td>Name</td>
+					<td><input type="text" id="a"/></td>
+				</tr>
+				<tr>
+					<td>Phone number</td>
+					<td><input type="number" id="b"/></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" id="c"/></td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td>
+						<select id="d">
+							<option>Choose</option>
+							<option>Tokyo</option>
+							<option>Delhi</option>
+							<option>New York</option>
+							<option>Paris</option>
+							<option>London</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Favorite song</td>
+					<td><input type="text" id="e"/></td>
+				</tr>
+				<tr>
+					<td>Favorite movie</td>
+					<td><input type="text" id="f"/></td>
+				</tr>
+				<tr>
+					<td>Date of Birth</td>
+					<td><input type="date" id="g"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="OK" id="h"/></td>
+				</tr>
+			</table>
+		</div>
+		<div style="width:70%;height:100%;float:left;">
+			<p id="i" style="margin-top:150px"></p>
+		</div>
+	</body>
+</html>
